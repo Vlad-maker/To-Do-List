@@ -5,12 +5,11 @@ const total = document.querySelector('#total');
 const date = document.querySelector('.header__date');
 
 let i = 0;
+
 //Date
 const options = {weekday : "long", month:"short", day:"numeric"};
 const today = new Date();
 date.innerHTML = today.toLocaleDateString("en-US", options);
-
-
 
 addBtn.addEventListener('click', (event) => {
     if(input.value === "") return

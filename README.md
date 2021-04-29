@@ -1,3 +1,3 @@
 Simple To-Do List on Vanilla JavaScript
 
-[Enjoy](https://vlad-maker.github.io/To-Do-List/)  
+[Try it here](https://vlad-maker.github.io/To-Do-List/)  
