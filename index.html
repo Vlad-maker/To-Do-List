@@ -2,20 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=`, initial-scale=1.0"> -->
-    <title>ToDoList</title>
-    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do-List-Z</title>
+    <link href="./index.css" rel="stylesheet">
 </head>
 <body>
-    <div class="wrap">
-        <input type="text" id="input" />
-        <button id="btn">add</button>
-        <ul id="result"></ul>
+    
+    <div class="display">
+        <header class="header">
+            <button class="header__button"></button>
+            <div class="header__date">May the 4th</div>
+        </header>
+        <ul class ="content">
+            <!-- <li class="content__item">
+                <div class="checkbox"></div>
+                <p class="todo">some text</p>
+                <button class="content__button"></button>
+            </li> -->
+        </ul>
         <div>
             Total:
             <span id="total"></span>
         </div>
+        <div class="input">
+            <input type="text" class="input__text">
+            <button class="input__button"></button>
+        </div>
     </div>
-    <script src="./index.js"></script>
+<script src="./app.js"></script>
 </body>
 </html>

@@ -1,62 +1,104 @@
-body {
-    height: 100vh;
-    background: rgb(255, 200, 135);
-    margin: 0 auto;
-    padding-top: 100px;
+div,h1, h2, h3, h4, p ,li, ul, img, section, article, main, header { 
+    outline-width: 1px; 
+    outline-style: solid; 
+    outline-color: red; 
 }
 
-.wrap {
-    width: 300px;
-    margin: auto;
-}
-#input {
-    width: 70%;
-
-}
-
-#btn {
-    width: 20%;
+.display {
+    min-width: 320px;
+    max-width: 425px;
+    margin: 100px auto 0;
+    padding: 5px;
+    min-height: 640px;
+    display: flex;
+    flex-direction: column;
 }
 
-ul{
-    list-style: none;
-    margin: 0;
+.header {
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__button {
+    width:24px;
+    height:24px;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.header__date {
+    min-height: 3vh;
+    margin-top: auto;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.content {
+    min-height: 42vh;
     padding: 0;
 }
 
-#result {
-    margin-bottom: 50px;
-}
-
-.btn {
-    background: red;
-    border: none;
-    color: white;
-    margin-left: 15px;
-    padding: 10px;
-    cursor: pointer;
-    position: relative;
-    z-index: 10;
-}
-
-.li {
-    padding: 4px 8px;
-    background: #eddfff;
-    border: 1px solid brown;
-    margin: 10px 0;
+.content__item {
+    margin: 10px;
+    list-style-type:none;
+    min-height: 5vh;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    z-index: 5;
-    width: 100%;
-    text-transform: capitalize;
+    flex-direction: row;
 }
 
-.li-active .btn {
-    color: #555;
-    text-decoration: line-through;
-    background: #000;
+.checkbox{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: aquamarine;
+    align-self: center;
 }
 
+.checkbox_done{
+    background-color: rgb(255, 127, 127);
+}
 
+.todo {
+    max-width: 280px;
+    min-height: 36px;
+    margin-left: 5px;
+    font-size: 22px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding:  9px 2px 0 2px;
+    
+}
+
+.content__button {
+    width: 36px;
+    height: 36px;
+    align-self: center;
+    margin-left: auto;
+    margin-right: 5px;
+    cursor: pointer;
+    background-image: url('./img/delete.svg');    
+}
+
+.input {
+    min-height: 5vh;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.input__text {
+    min-height: 34px;
+    min-width: 240px;
+    margin: 3px;
+    font-size: 22px;
+}
+
+.input__button {
+    width: 36px;
+    height: 36px;
+    align-self: center;
+    margin-left: auto;
+    margin-right: 5px;
+    cursor: pointer;
+}
